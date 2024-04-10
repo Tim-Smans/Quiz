@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <!--
+    Opening page.
+    -->
+    <div class="row vertical-align" id="openingScreen">
+        <h1 class="openingTitle" id="title">JAVASCRIPT INTERACTIVE QUIZ</h1>
+        <h3 class="openingTitle">Created by Tim Smans.</h3>
+        <button type="button" class="btn btn-outline-danger" id="startBtn">Click here to get started</button>
+    </div>
+
+    <!--
+    Questions page.
+    -->
+    <div class="row vertical-align p-5" id="questionsPage">
+        <h1 id="questionTitle">Question 1/10</h1>
+        <div class="mt-5 mb-5">
+            <p id="theme"></p>
+            <p id="question"></p>
+        </div>
+        <!-- Question 1-->
+        <div class="alert alert-light" id="option1" role="alert">
+            <strong>Answer 1</strong>
+            <p id="optionp1">test</p>
+        </div>
+        <!-- Question 2-->
+        <div class="alert alert-light" id="option2" role="alert">
+            <strong>Answer 2</strong>
+            <p id="optionp2"></p>
+
+        </div>
+        <!-- Question 3-->
+        <div class="alert alert-light" id="option3" role="alert">
+            <strong>Answer 3</strong>
+            <p id="optionp3"></p>
+        </div>
+        <!-- Question 4-->
+        <div class="alert alert-light" id="option4" role="alert">
+            <strong>Answer 4</strong>
+            <p id="optionp4"></p>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger" id="nextBtn">Continue to the next question</button>
+
+    </div>
+
+    <!--
+    Scoreboard page.
+    -->
+    <div class="row vertical-align mt-5" id="scoreboardScreen">
+        <h1 class="openingTitle" id="scoreboardTitle">JAVASCRIPT INTERACTIVE QUIZ<br>SCOREBOARD</h1>
+        <p id="score"></p>
+        <button type="button" class="btn btn-outline-danger" id="restartBtn">Click here to restart quiz</button>
+        <img id="imageId" src="img/sad.png" alt="big emoticon depending on score.">
+    </div>
+</div>
+
+<script src="js/questions.js"></script>
+<script src="js/quizScript.js"></script>
+</body>
+</html>
